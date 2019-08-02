@@ -1,0 +1,116 @@
+<!-- Sign up and log in forms -->
+<aside class="form-section-login-lover-wrapper hide">
+  <div class="form-section-login-lover">
+    <h2>Log in as a vintage lover</h2>
+    <i class="fas fa-times cross"></i>
+    <div class="login-lover-btn-div">
+      <a href="/auth/login/facebook" class="fb-btn"><i class="fab fa-facebook-f"></i>Log in with Facebook</a>
+      <a href="/auth/login/google" class="google-btn"><i class="fab fa-google"></i>Log in with Google</a>
+    </div>
+  </div>
+</aside>
+<aside class="form-section-signup-lover-wrapper hide">
+  <div class="form-section-signup-lover">
+    <h2><a href="/signup">Sign up as an vintage lover</a></h2>
+    <i class="fas fa-times cross"></i>
+    <form class="form" method="POST" action="/lover/auth/signup">
+      <label for="username">Username:</label>
+      <input class="input-field" type="text" name="userName" id="username">
+      <label for="companyname">Company name:</label>
+      <input class="input-field" type="text" name="companyName" id="companyname">
+      <label for="email">Email:</label>
+      <input class="input-field" type="email" name="email" id="email">
+      <label for="password">Password:</label>
+      <input class="input-field" type="password" name="password" id="password">
+      <input class="submit-btn" type="submit">
+    </form>
+  </div>
+</aside>
+<aside class="form-section-signup-owner-wrapper hide">
+  <div class="form-section-signup-owner">
+    <h2><a href="/owners/signup">Sign up as a shop owner</a></h2>
+    <i class="fas fa-times cross"></i>
+    <form class="form" method="POST" action="/owner/auth/signup">
+      <label for="username">Username:</label>
+      <input class="input-field" type="text" name="userName" id="username">
+      <label for="companyname">Company name:</label>
+      <input class="input-field" type="text" name="companyName" id="companyname">
+      <label for="email">Email:</label>
+      <input class="input-field" type="email" name="email" id="email">
+      <label for="password">Password:</label>
+      <input class="input-field" type="password" name="password" id="password">
+      <input class="submit-btn" type="submit">
+    </form>
+</aside>
+<aside class="form-section-login-owner-wrapper hide">
+  <div class="form-section-login-owner">
+    <h2>Log in as a small shop owner</h2>
+    <i class="fas fa-times cross"></i>
+    <form class="form" action="/login" method="POST">
+      <label for="">Username:</label>
+      <input class="input-field" type="text" name="userName">
+      <label for="">Password:</label>
+      <input class="input-field" type="password" name="password">
+      <input class="submit-btn" type="submit">
+    </form>
+  </div>
+</aside>
+
+{{!-- MAIN --}}
+<main class="content">
+<section class="jumbo-section">
+
+</section>
+
+<!-- About section -->
+<section class="about-us-main">
+  <h1>Connet Vintage Lovers Around</h1>
+  <div class="about-icons">
+    <div class="about-icon-div">
+      <i class="fas fa-tree"></i>
+      <p>Create Shops</p>
+    </div>
+    <div class="about-icon-div">
+      <i class="far fa-lightbulb"></i>
+      <p>Currate Products</p>
+    </div>
+    <div class="about-icon-div">
+      <i class="fas fa-globe-americas"></i>
+      <p>Connect Buyers</p>
+    </div>
+  </div>
+</section>
+
+<!--Vintage Lover Section -->
+<div class="users-sections-wrapper" id="lover">
+  <section class="lover-section">
+    <h2>Are you a vintage lover?</h2>
+    <div class="lover-text">
+      <p class="quotation">Where you find it determines what you'll pay: My favorite place to find vintage pieces is in a charity or thrift shop. There, you'll pay next to nothing, especially if they're running sales.</p>
+      <div class="buttons-div">
+        <a href="/signup"><button id="signup-lover">Sign up</button></a>
+        <a href="/login"><button id="login-lover">Login</button></a>
+      </div>
+    </div>
+  </section>
+
+  {{!-- <!-- Image for mobile layout -->
+  <section>
+    <div class="img-div">
+      <img src="./images/vintage_shop.jpg" alt="">
+    </div> --}}
+
+  </section>
+  <!-- Small shop owner section -->
+  <section class="owner-section" id="owner">
+    <h2>Are you a small shop owner?</h2>
+    <div class="owner-text">
+      <p class="quotation">You need to know how to sew and be prepared to repair things: Vintage clothing is better made than those fast fashion clothes that you find these days. That said, vintage clothing has been around for a while.</p>
+      <div class="buttons-div">
+        <a href="/owners/signup"><button id="signup-owner">Sign up</button></a>
+        <a href="/owners/login"><button id="login-owner">Log in</button>
+      </div></a>
+    </div>
+  </section>
+</div>
+</main>

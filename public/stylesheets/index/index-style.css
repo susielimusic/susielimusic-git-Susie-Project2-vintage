@@ -1,0 +1,424 @@
+/* General styling */
+
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .content {
+    flex: 1 0 auto;
+  }
+  
+  header {
+    height: 100px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  /* Hamburger style */
+  
+  .hamburger-container {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(165,42,42);
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  .nav-ul-menu {
+    display: none;
+    background-color: #fafafa;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 100px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .spacedown {
+    margin-top: 190px;
+  }
+  
+  .nav-ul-menu li {
+    display: block;
+    font-size: 1.8em;
+    padding: 15px 25px;
+    color: #fff;
+    border: 0.01em solid #dbdbdb;
+  }
+  
+  .nav-ul-menu li a {
+      color: rgb(97, 97, 97);
+  }
+  
+  /* Logo */
+  
+  .logo {
+    max-width: 150px;
+  }
+  
+  /* Form section */
+  /* Login recycler */
+  
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .form-section-login-lover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: url('../../images/1.jpg');
+    background-size: cover;
+  }
+  
+  .cross {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    font-size: 4.5em;
+    color: #fff;
+  }
+  
+  .form-section-login-lover h2 {
+    font-size: 5.5em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40%;
+  }
+  
+  .login-lover-btn-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+  }
+  
+  .fb-btn {
+    width: 80%;
+    padding: 10px;
+    background: #324d8e;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .google-btn {
+    width: 80%;
+    padding: 10px;
+    background: #d5472e;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  .login-lover-btn-div i {
+    margin-right: 10px;
+  }
+  
+  /* Sign up owner */
+  
+  .form-section-signup-owner {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: url('./images/1.jpg');
+    background-size: cover;
+  }
+  
+  .form-section-signup-owner h2 {
+    font-size: 5.5em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    width: 80%;
+    margin: 30px auto;
+  }
+  
+  .form label {
+    font-size: 1.6em;
+    color: #fff;
+  }
+  
+  .input-field {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .submit-btn {
+    width: 50%;
+    margin: 25px auto 0 auto;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: rgb(165,42,42);
+    border-radius: 6px;
+    transition: 0.5s;
+    font-size: 1.6em;
+  }
+  
+  .submit-btn:hover {
+    background-color: rgb(165,42,42);
+  }
+  
+  /* Log in owner */
+  
+  .form-section-login-owner {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: url('./images/1.jpg');
+    background-size: cover;
+  }
+  
+  .form-section-login-owner h2 {
+    font-size: 5.5em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40%;
+  }
+  
+  /* Jumbo */
+  
+  .jumbo-section {
+      height: 200px;
+      background: url('../../images/jumbo.jpg');
+      background-size: cover;
+  }
+  
+  /* About */
+  .about-us-main {
+      height: 220px;
+      padding: 30px;
+  }
+  
+  .about-us-main h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: rgb(165,42,42);
+      font-weight: 300;
+      line-height: 1.2em; 
+  }
+ 
+  .about-us-paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 2.5em;
+    color: black;
+    font-weight: 150;
+    line-height: 2.4em;
+  } 
+
+  .about-us-main p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 2.5em;
+    color: black;
+    font-weight: 150;
+    line-height: 2.4em;
+    margin-top:30px;
+  }
+
+  .about-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .about-icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 35px;
+  }
+  
+  .about-icon-div i {
+    font-size: 3em;
+    margin-bottom: 12px;
+    color: rgb(165,42,42);
+  }
+  
+  .about-icon-div p {
+    font-size: 1.6em;
+    text-align: center;
+    color: #222222;
+    font-weight: 300;
+  } 
+  
+  /* Lover section */
+  
+  .lover-section {
+    margin: 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    background: rgba(165,42,42);
+    background: -moz-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(203,255,179,1) 94%, rgba(203,255,179,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(165,42,42)), color-stop(94%, rgba(203,255,179,1)), color-stop(100%, rgba(203,255,179,1)));
+    background: -webkit-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(203,255,179,1) 94%, rgba(203,255,179,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(203,255,179,1) 94%, rgba(203,255,179,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(203,255,179,1) 94%, rgba(203,255,179,1) 100%);
+    background: linear-gradient(45deg, rgba(165,42,42) 0%, rgba(203,255,179,1) 94%, rgba(203,255,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cc66', endColorstr='#cbffb3', GradientType=1 );
+  }
+  
+  .lover-section h2, .lover-section h2 {
+    text-align: left;
+    display: inline-block;
+    font-size: 2.9em;
+    font-weight: 300;
+    color: #fdfdfd;
+    margin: 20px 0 0 20px;
+  }
+  
+  .lover-text, .lover-text {
+    width: 80%;
+    margin: 30px 0 10px 20px;
+    background: rgba(235, 235, 235, 0.274);
+    padding: 10px;
+  }
+  
+  .lover-section p, .owner-section p {
+    text-align: left;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: #fafafa;
+  }
+  
+  .buttons-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons-div button {
+    margin: 20px 10px 0 10px;
+    border: none;
+    background-color: rgba(165,42,42);
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: 0.5s;
+  }
+  
+  .buttons-div button:hover {
+    background-color: rgb(165,42,42);
+  }
+  
+  /* Owner section */
+  
+  .owner-section {
+    margin: 10px;
+    border-radius: 5px;
+    background: rgba(165,42,42);
+      background: -moz-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(165,42,42) 42%, rgba(165,42,42) 100%);
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(165,42,42)), color-stop(42%, rgba(165,42,42)), color-stop(100%, rgba(165,42,42)));
+      background: -webkit-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(165,42,42) 42%, rgba(165,42,42) 100%);
+      background: -o-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(165,42,42) 42%, rgba(165,42,42) 100%);
+      background: -ms-linear-gradient(45deg, rgba(165,42,42) 0%, rgba(165,42,42) 42%, rgba(165,42,42) 100%);
+      background: linear-gradient(45deg, rgba(165,42,42) 0%, rgba(165,42,42) 42%, rgba(165,42,42) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f078', endColorstr='#2d8f00', GradientType=1 );
+    padding-bottom: 10px;
+  }
+  
+  /* Image between lover section and owner section */
+  
+  .img-div img {
+    max-width: 100%
+  }
+  
+  /* Footer */
+  
+  .footer {
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f8f8f8;
+    flex-shrink: 0;
+  }
+  
+  .social-icons {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icons i {
+    color: rgb(66, 158, 27);
+    font-size: 2.5em;
+  }

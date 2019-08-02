@@ -1,0 +1,27 @@
+.edit-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.edit-form label {
+    font-size: 1.3em;
+    margin: 15px 0 10px 0;
+    font-weight: 600;
+}
+
+.edit-form .input-edit {
+    padding: 7px 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+.edit-form textarea {
+    resize: none;
+}

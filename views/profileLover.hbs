@@ -1,0 +1,23 @@
+<main class="content">
+    <div class="profile-container">
+      <div class="profile-pic-section">
+                <div class="profile-img-div">
+                {{#if user.imageUrl }}
+                <img class="profile-img" src="{{ user.imageUrl }}" alt="owner profile photo">
+                {{else}}
+                <img class="profile-img" src="/images/red_man.jpg" alt="owner profile photo">
+                {{/if}}
+            </div>
+            </div>
+        <div class="profile-info-section">
+            <div>
+                <p class="keys">Vintage Lover:</p>
+                <p>{{ lover.email }}</p>
+            </div>
+            <div>
+                <p class="keys">Description:</p>
+                <p>Where you find it determines what you'll pay: My favorite place to find vintage pieces is in a charity or thrift shop. There, you'll pay next to nothing, especially if they're running sales.</p>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,71 @@
+<main class="content">
+    <div class="profile-container">
+        <div class="profile-pic-section">
+            <div class="profile-img-div">
+                {{#if user.imageUrl }}
+                <img class="profile-img" src="{{ user.imageUrl }}" alt="owner profile photo">
+                {{else}}
+                <img class="profile-img" src="/images/main_page.jpg" alt="owner profile photo">
+                {{/if}}
+            </div>
+        </div>
+        <div class="profile-info-section">
+            <a href="/owner/edit/{{user._id}}">Edit your profile <i class="fas fa-pencil-alt"></i></a>
+            <div>
+                <p class="keys">Shop Owners:</p>
+                <p>{{ user.userName }}</p>
+            </div>
+            {{#if user.companyName}}
+            <div>
+                <p class="keys">Company name:</p>
+                <p>{{ user.companyName }}</p>
+            </div>
+            {{else}}
+            <div class="hide"></div>
+            {{/if}}
+            {{#if user.description}}
+            <div>
+                <p class="keys">Description:</p>
+                <p>{{ user.description }}</p>
+            </div>
+            {{else}}
+            <div class="hide"></div>
+            {{/if}}
+            {{#if user.website}}
+            <div>
+                <p class="keys">Website:</p>
+                <p>{{ user.website }}</p>
+            </div>
+            {{else}}
+            <div class="hide"></div>
+            {{/if}}
+            {{#if user.address.country}}
+            <div>
+                <p class="keys">Country:</p>
+                <p>{{ user.address.country }}</p>
+            </div>
+            {{else}}
+            <div class="hide"></div>
+            {{/if}}
+            {{#if user.address.city}}
+            <div>
+                <p class="keys">City:</p>
+                <p>{{ user.address.city }}</p>
+            </div>
+            {{else}}
+            <div class="hide"></div>
+            {{/if}}
+            {{#if user.address.street}}
+            <div>
+                <p class="keys">Street:</p>
+                <p>{{ user.address.street }}</p>
+            </div>
+            {{else}}
+            <div class="hide"></div>
+            {{/if}}
+        </div>
+        <div class="products">
+            <a href="/products/create">Create Products</a>
+        </div>
+    </div>
+</main>

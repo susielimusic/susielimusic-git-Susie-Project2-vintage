@@ -1,0 +1,29 @@
+<main class="content">
+    <div class="edit-form-container">
+        <form class="edit-form" action="/owner/edit/{{user._id}}" method="POST">
+            <label for="firstName">First name:</label>
+            <input class="input-edit" type="text" name="firstName" value="{{ user.firstName }}">
+            <label for="lastName">Last name:</label>
+            <input class="input-edit" type="text" name="lastName" value="{{ user.lastName }}">
+            <label for="">Username:</label>
+            <input class="input-edit" type="text" name="userName" value="{{ user.userName }}">
+            <label for="">Company name:</label>
+            <input class="input-edit" type="text" name="companyName" value="{{ user.companyName }}">
+            <label for="">Email:</label>
+            <input class="input-edit" type="email" name="email" value="{{ user.email }}">
+            <label for="">Password:</label>
+            <input class="input-edit" type="password" name="password">
+            <label for="">Country:</label>
+            <input class="input-edit" type="text" name="country" value="{{ user.address.country }}">
+            <label for="">City:</label>
+            <input class="input-edit" type="text" name="city" value="{{ user.address.city }}">
+            <label for="">Street:</label>
+            <input class="input-edit" type="text" name="street" value="{{ user.address.street }}">
+            <label for="">Image url:</label>
+            <input class="input-edit" type="text" name="imageUrl">
+            <label for="">Description:</label>
+            <textarea name="description" cols="30" rows="10" placeholder="Write something about yourself or your own business"></textarea>
+            <input class="submit-btn" type="submit">
+        </form>
+    </div>
+</main>

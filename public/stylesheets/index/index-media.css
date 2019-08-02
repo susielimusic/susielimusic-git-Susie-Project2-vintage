@@ -1,0 +1,351 @@
+@media (min-width: 1024px) {
+
+    /* Nav bar */
+      
+    header {
+      height: auto;
+    }
+  
+    .hamburger-container {
+      display: none;
+    }
+  
+    .nav-ul-menu {
+      background-color: #fff;
+      position: static;
+      overflow: hidden;
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .nav-ul-menu li {
+      display: block;
+      font-size: 2em;
+      border: none;
+      text-align: center;
+    }
+  
+    .nav-ul-menu li a {
+      color: #333;
+    }
+  
+    .nav-ul-menu a {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      display: inline-block;
+      padding: 15px 20px;
+      position: relative;
+    }
+  
+    .nav-ul-menu a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #333;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  
+    .nav-ul-menu a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+    
+    .logo {
+      max-width: 220px;
+    }
+  
+    /* Jumbo */
+  
+    .jumbo-section {
+        height: 60vh;
+        background: url('../../images/jumbo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+    }
+  
+      /* About */
+  
+    .about-us-main {
+      height: auto;
+      padding: 30px;
+  }
+  
+    .about-us-main h1 {
+      font-size: 5.5em;
+  }
+  
+    .about-icons {
+      justify-content: space-around;
+      margin: 35px 0;
+  }
+  
+    .about-icon-div i {
+      font-size: 6em;
+      margin-bottom: 30px;
+      color: rgb(165,42,42);
+  }
+  
+    .about-icon-div p {
+      font-size: 3em;
+      text-align: center;
+      color: #222222;
+      font-weight: 300;
+  }
+  
+  /* Login, sign up sections for owners and lovers */
+  
+    .users-sections-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  
+    .lover-section {
+      width: 45%;
+  }
+  
+    .owner-section {
+      width: 45%;
+      
+  }
+  
+    .img-div {
+    display: none;
+  }
+  
+    .owner-section h2, .lover-section h2 {
+    text-align: left;
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 300;
+    color: #fdfdfd;
+    margin: 20px 0 0 20px;
+  }
+  
+    .owner-text, .lover-text {
+    width: 80%;
+    margin: 30px 0 10px 20px;
+    background: rgba(235, 235, 235, 0.274);
+    padding: 10px;
+  }
+  
+    .owner-section p, .lover-section p {
+    font-size: 1.9em;
+      line-height: 1.2em;
+  }
+  
+    .buttons-div button {
+    margin: 35px 10px 0 10px;
+      font-size: 2em;
+    padding: 10px 30px;
+  }
+  
+  /* Footer */
+  
+    .footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+  }
+  
+    .social-icons i {
+    color: rgb(165,42,42);
+    font-size: 4em;
+  }
+
+  /* Form section */
+  /* Login lover */
+  
+    .show {
+    display: block;
+  }
+  
+    .hide {
+    display: none;
+  }
+  
+    .form-section-login-lover-wrapper, .form-section-signup-owner-wrapper, .form-section-login-owner-wrapper {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(51, 51, 51, 0.7);
+      position: fixed;
+  }
+  
+    .form-section-login-lover {
+    width: 640px;
+    height: 640px;
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+    .login-lover-btn-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100%;
+  }
+  
+    .fb-btn, .google-btn {
+    padding: 15px;
+  }
+  
+    .login-lover-btn-div i {
+    margin-right: 10px;
+  }
+  
+  /* Sign up owner */
+  
+    .form-section-signup-owner {
+      width: auto;
+    height: 640px;
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 30px;
+  }
+  
+  /* Log in owner */
+  
+    .form-section-login-owner {
+    width: auto;
+    height: 640px;
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 30px;
+  }
+  
+    .form-section-login-owner h2 {
+    font-size: 5.5em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40%;
+  }
+    .quotation {
+    font-size: 30px;
+    margin: 0 auto;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+  }
+
+    .quotation:before {
+    content: open-quote;
+    display: inline;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 30px;
+    color: #ccc;
+    font-size: 3em;
+  }
+    .quotation:after {
+    content: close-quote;
+    display: inline;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 35px;
+    color: #ccc;
+    font-size: 3em;
+  }
+
+    .footer{
+    margin:0;
+    text-align: right;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+    .owner-section h2 {
+    text-align: left;
+    display: inline-block;
+    font-weight: 300;
+    color: #fdfdfd;
+    margin: 20px 0 0 20px
+  }
+    .owner-text {
+    width: 80%;
+    margin: 30px 0 10px 20px;
+    background: rgba(235, 235, 235, 0.274);
+    padding: 10px;
+  }
+}
+
+    
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .users-sections-wrapper {
+      flex-direction: column;
+    }
+}
