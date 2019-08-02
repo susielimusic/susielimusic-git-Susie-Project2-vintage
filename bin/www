@@ -22,9 +22,9 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-var socketApi = require('../socketApi');
-var io = socketApi.io;
-io.listen(server);
+// var socketApi = require('../socketApi');
+// var io = socketApi.io;
+// io.listen(server);
 
 /**
  * Listen on provided port, on all network interfaces.
