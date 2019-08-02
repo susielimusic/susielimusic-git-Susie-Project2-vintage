@@ -68,5 +68,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 mongoose.connect(process.env.MONGODB_URI);
-app.listen(process.env.PORT, function(){console.log('App is running on port 3000')})
+// app.listen(process.env.PORT, function(){console.log('App is running on port 3000')})
 module.exports = app;
