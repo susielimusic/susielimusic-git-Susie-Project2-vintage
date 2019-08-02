@@ -67,6 +67,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 3000);
   res.render('error');
 });
-mongoose.connect('mongodb://localhost/vintageApp');
-app.listen(3000, function(){console.log('App is running on port 3000')})
+mongoose.connect(process.env.MONGODB_URI);
+app.listen(process.env.PORT, function(){console.log('App is running on port 3000')})
 module.exports = app;
